@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombatHUD_HotReloadPlugin", "CombatHUD_HotReloadPlugin\CombatHUD_HotReloadPlugin.csproj", "{F891C02F-9C5B-4B48-8AB5-927FAB79FC16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombatHUD_HotReload", "CombatHUD_HotReload\CombatHUD_HotReload.csproj", "{282F32B1-D2CC-4A22-B0C8-9C285FB1812B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F891C02F-9C5B-4B48-8AB5-927FAB79FC16}.Release|x86.ActiveCfg = Release|x86
+		{F891C02F-9C5B-4B48-8AB5-927FAB79FC16}.Release|x86.Build.0 = Release|x86
+		{282F32B1-D2CC-4A22-B0C8-9C285FB1812B}.Release|x86.ActiveCfg = Release|x86
+		{282F32B1-D2CC-4A22-B0C8-9C285FB1812B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EF5E993-6591-4505-B569-0AA1B05994DA}
+	EndGlobalSection
+EndGlobal

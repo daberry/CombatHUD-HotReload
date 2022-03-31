@@ -1,0 +1,8 @@
+C:\Users\dave\source\repos\CombatHUD-HotReload\bin\CombatHUD_HotReloadPlugin.dll
+C:\Users\dave\source\repos\CombatHUD-HotReload\bin\CombatHUD_HotReloadPlugin.pdb
+C:\Users\dave\source\repos\CombatHUD-HotReload\CombatHUD_HotReloadPlugin\obj\x86\Release\CombatHUD_HotReloadPlugin.csproj.AssemblyReference.cache
+C:\Users\dave\source\repos\CombatHUD-HotReload\CombatHUD_HotReloadPlugin\obj\x86\Release\CombatHUD_HotReloadPlugin.csproj.CoreCompileInputs.cache
+C:\Users\dave\source\repos\CombatHUD-HotReload\CombatHUD_HotReloadPlugin\obj\x86\Release\CombatHUD_HotReloadPlugin.dll
+C:\Users\dave\source\repos\CombatHUD-HotReload\CombatHUD_HotReloadPlugin\obj\x86\Release\CombatHUD_HotReloadPlugin.pdb
+C:\Users\dave\source\repos\CombatHUD-HotReload\CombatHUD_HotReloadPlugin\obj\x86\Release\Interop.SpellFilter.dll
+C:\Users\dave\source\repos\CombatHUD-HotReload\CombatHUD_HotReloadPlugin\obj\x86\Release\CombatHUD_HotReloadPlugin.csproj.ResolveComReference.cache

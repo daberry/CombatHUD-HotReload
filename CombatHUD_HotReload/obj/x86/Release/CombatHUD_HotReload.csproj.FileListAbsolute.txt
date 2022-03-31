@@ -1,0 +1,6 @@
+C:\Users\dave\source\repos\CombatHUD-HotReload\bin\CombatHUD_HotReload.dll
+C:\Users\dave\source\repos\CombatHUD-HotReload\bin\CombatHUD_HotReload.pdb
+C:\Users\dave\source\repos\CombatHUD-HotReload\CombatHUD_HotReload\obj\x86\Release\CombatHUD_HotReload.csproj.AssemblyReference.cache
+C:\Users\dave\source\repos\CombatHUD-HotReload\CombatHUD_HotReload\obj\x86\Release\CombatHUD_HotReload.csproj.CoreCompileInputs.cache
+C:\Users\dave\source\repos\CombatHUD-HotReload\CombatHUD_HotReload\obj\x86\Release\CombatHUD_HotReload.dll
+C:\Users\dave\source\repos\CombatHUD-HotReload\CombatHUD_HotReload\obj\x86\Release\CombatHUD_HotReload.pdb
