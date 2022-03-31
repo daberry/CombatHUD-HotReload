@@ -54,6 +54,9 @@ namespace CombatHUD_HotReloadPlugin
             Core.WorldFilter.ChangeObject += new EventHandler<ChangeObjectEventArgs>(WorldFilter_ChangeObject);
             Core.WorldFilter.CreateObject += new EventHandler<CreateObjectEventArgs>(WorldFilter_CreateObject);
             Core.WorldFilter.ReleaseObject += new EventHandler<ReleaseObjectEventArgs>(WorldFilter_ReleaseObject);
+            Core.CharacterFilter.SpellCast += new EventHandler<SpellCastEventArgs>(CharacterFilter_SpellCast);
+            Core.CharacterFilter.ChangeEnchantments += new EventHandler<ChangeEnchantmentsEventArgs>(CharacterFilter_ChangeEnchantments);
+
 
             PluginAssemblyDirectory = pluginAssemblyDirectory;
             CreateView();
@@ -71,6 +74,8 @@ namespace CombatHUD_HotReloadPlugin
             Core.WorldFilter.ChangeObject -= new EventHandler<ChangeObjectEventArgs>(WorldFilter_ChangeObject);
             Core.WorldFilter.CreateObject -= new EventHandler<CreateObjectEventArgs>(WorldFilter_CreateObject);
             Core.WorldFilter.ReleaseObject -= new EventHandler<ReleaseObjectEventArgs>(WorldFilter_ReleaseObject);
+            Core.CharacterFilter.SpellCast -= new EventHandler<SpellCastEventArgs>(CharacterFilter_SpellCast);
+            Core.CharacterFilter.ChangeEnchantments += new EventHandler<ChangeEnchantmentsEventArgs>(CharacterFilter_ChangeEnchantments);
 
             view.Visible = false;
             view.Dispose();
@@ -140,6 +145,16 @@ namespace CombatHUD_HotReloadPlugin
         #endregion
 
         #region Event Handling
+        private void CharacterFilter_SpellCast(object sender, SpellCastEventArgs e)
+        {
+            _logger.LogToChat($"SpellCast {e.SpellId} {e.TargetId} {e.EventType}");
+        }
+
+        private void CharacterFilter_ChangeEnchantments(object sender, ChangeEnchantmentsEventArgs e)
+        {
+            _logger.LogToChat($"ChangeEnchantments {e.Enchantment} {e.Type}");
+        }
+
         private void WorldFilter_CreateObject(object sender, CreateObjectEventArgs e)
         {
             LogEvent(sender, e.New, GetCurrentMethod());
@@ -168,7 +183,7 @@ namespace CombatHUD_HotReloadPlugin
             }
 
             var monsterObjectCollection = Core.WorldFilter.GetByObjectClass(ObjectClass.Monster);
-            _logger.LogToChat($"{functionName}. {trigger.Id} {trigger.Name} {trigger.LastIdTime} {trigger.ActiveSpellCount} Monster Count: {monsterObjectCollection.Count}");
+            _logger.LogToChat($"{functionName}. {trigger.Id} {trigger.Name} {trigger.LastIdTime} Monster Count: {monsterObjectCollection.Count}");
 
             var activeSpellIDs = getActiveSpellIDs(trigger);
             _logger.LogToChat($"active spells: {activeSpellIDs}");
@@ -182,6 +197,7 @@ namespace CombatHUD_HotReloadPlugin
             return sf.GetMethod().Name;
         }
 
+        //unused
         private int[] getActiveSpellIDs(WorldObject wo)
         {
             int[] activeSpells = new int[wo.ActiveSpellCount];
